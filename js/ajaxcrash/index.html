@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    body div {
+      width: 10rem;
+      height: 10rem;
+      background: green;
+    }
+
+    .c {
+      width: 20rem;
+      animation-direction: reverse;
+    }
+  </style>
+  <body>
+    <div></div>
+
+    <script>
+      var div = document.querySelector('div');
+      div.addEventListener('mouseenter', changeSize);
+      function changeSize(e) {
+        e.target.classList.add('c');
+      }
+      div.addEventListener('mouseleave', changeSize2);
+      function changeSize2(e) {
+        e.target.transition = ' all 1s linear';
+
+        e.target.classList.remove('c');
+        e.target.transition = ' all 1s linear';
+      }
+    </script>
+  </body>
+</html>
