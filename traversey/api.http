@@ -1,0 +1,5 @@
+GET http://jsonplaceholder.typicode.com/posts
+
+###
+
+GET http://jsonplaceholder.typicode.com/posts
