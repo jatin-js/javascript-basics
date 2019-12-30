@@ -1,0 +1,8 @@
+0.  Create folderName(any name) in which create index.html and create 'scss' folder in which create main.scss file
+1.  npm should be installed
+2.  npm init           //This will create a file package.json
+3.  $ npm i node-sass  //(i-install) sass compiler
+4.  In package.json,change 'test' to 'sass' and echo statement to "node-sass -w scss/ -o folderName/css/ --recursive"
+5.  $ npm run sass
+6.  Now write scss code, save it, node-sass compiler will compile it, if everything go right, css folder will get created in folderName along with main.css file
+6.  If error in main.scss, sass compiler will show it with red colour
