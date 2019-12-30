@@ -1,0 +1,10 @@
+@import './variables';
+@import './header';
+
+.contact {
+  //@include flexCenter(row, blue);
+  @extend header; //inheriting properties
+  background: lightcoral; //overwriting properties
+  background: grey;
+  width: 100% - 20%;
+}
