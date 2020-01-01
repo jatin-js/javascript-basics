@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <title>Bootstrap Cheat Sheet</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .carousel-inner {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+  <body>
+    <header>
+      <!-- <h1
+        style="text-align: center;color: green;text-transform: capitalize;font-weight: bold;"
+      >
+        Hello, world!
+      </h1>
+      <hr />
+
+      <h1
+        class="text-center text-success bg-primary text-capitalize font-weight-bold"
+      >
+        Welcome to my channel
+      </h1> -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">JatinSingh</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide mt-2"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/1.jpg" class="d-block w-100 img-fluid" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="img/2.jpg" class="d-block w-100 img-fluid" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="img/3.jpg" class="d-block w-100 img-fluid" alt="..." />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- about us -->
+
+    <section>
+      <div class="container-fluid">
+        <h1 class="text-center text-capitalize pt-5">about us</h1>
+
+        <hr class="w-25 mx-auto pt-5" />
+
+        <div class="row mb-5">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <img src="img/2.jpg" class="img-fluid" />
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h1>Who am I?</h1>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              assumenda, maxime corporis dolorem eum veniam laborum, quas quia
+              totam ut libero rerum. Voluptates sapiente, maxime mollitia
+              asperiores nesciunt pariatur illum? Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Adipisci earum eaque debitis minus
+              assumenda, porro quis ratione cumque quaerat culpa. Fugiat
+              recusandae, maxime molestiae unde facere porro doloribus
+              consequuntur officia facilis ab tenetur voluptas itaque sit
+              consectetur magnam iste reprehenderit est dignissimos. A, natus
+              eligendi? Aliquam dolore quibusdam ipsa. Animi.
+            </p>
+            <button class="btn bg-primary text-light">Wanna Know Me</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+
+    <section>
+      <div class="container">
+        <h1 class="text-center text-capitalize pt-5">services</h1>
+        <hr class="w-25 mx-auto pt-5" />
+
+        <div class="row text-center mb-5">
+          <div class="col-lg-4 col-sm-12 col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="img/1.jpg" alt="Card image" />
+              <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="img/1.jpg" alt="Card image" />
+              <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="img/1.jpg" alt="Card image" />
+              <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+
+    <section class="bg-primary ">
+      <article class="py-5 text-center text-white">
+        <h3 class="display-4 ">+91 12345676778</h3>
+        <p>If you want best service contact us</p>
+        <button class="btn btn-warning">Contact now</button>
+      </article>
+    </section>
+
+    <!-- gallery -->
+
+    <section>
+      <div class="container">
+        <h1 class="text-center text-capitalize pt-5">Gallery</h1>
+        <hr class="w-25 mx-auto pt-5" />
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <img src="img/3.jpg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <img src="img/3.jpg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <img src="img/3.jpg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <img src="img/3.jpg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <img src="img/3.jpg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <img src="img/3.jpg" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- register -->
+
+    <section class="bg-primary pb-5">
+      <article class="py-5">
+        <div class="text-center text-white">
+          <h3 class="display-4 ">Want To Join</h3>
+          <p>Be part of us</p>
+          <button
+            class="btn btn-warning"
+            data-toggle="modal"
+            data-target="#myModal"
+          >
+            Join Now
+          </button>
+        </div>
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Signup</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <form action="">
+                  <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Enter email"
+                      id="email"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      placeholder="Enter password"
+                      id="pwd"
+                    />
+                  </div>
+                  <div class="form-group form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" />
+                      Remember me
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- contact us  -->
+
+    <section>
+      <div class="container mb-5">
+        <h1 class="text-center text-capitalize pt-5">Contact us</h1>
+        <hr class="w-25 mx-auto pt-5" />
+        <div class="w-50 mx-auto">
+          <form action="">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter name"
+                id="name"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter email"
+                id="email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone No.:</label>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Enter Phone no."
+                id="phone"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Textarea</label>
+              <textarea class="form-control" id="message"></textarea>
+            </div>
+            <div class="form-group form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" /> Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+      <p class="text-center bg-dark text-white">
+        @copyright modern_portfolio.com 2020
+      </p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
