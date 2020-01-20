@@ -16,31 +16,31 @@
     <div id="users"></div>
 
     <script>
-      document.getElementById('button1').addEventListener('click', loadUser);
-      document.getElementById('button2').addEventListener('click', loadUsers);
+      document.getElementById("button1").addEventListener("click", loadUser);
+      document.getElementById("button2").addEventListener("click", loadUsers);
 
       function loadUser() {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'user.json', true);
+        xhr.open("GET", "user.json", true);
 
         xhr.onload = function() {
           if (this.status == 200) {
             var user = JSON.parse(this.responseText);
-            var output = '';
+            var output = "";
             output +=
-              '<ul>' +
-              '<li>ID: ' +
+              "<ul>" +
+              "<li>ID: " +
               user.id +
-              '</li>' +
-              '<li>NAME: ' +
+              "</li>" +
+              "<li>NAME: " +
               user.name +
-              '</li>' +
-              '<li>EMAIL: ' +
+              "</li>" +
+              "<li>EMAIL: " +
               user.email +
-              '</li>' +
-              '</ul>';
+              "</li>" +
+              "</ul>";
 
-            document.getElementById('user').innerHTML = output;
+            document.getElementById("user").innerHTML = output;
           }
         };
 
@@ -49,29 +49,29 @@
 
       function loadUsers() {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'users.json', true);
+        xhr.open("GET", "users.json", true);
 
         xhr.onload = function() {
           if (this.status == 200) {
             var users = JSON.parse(this.responseText);
-            var output = '';
+            var output = "";
 
             for (var i in users) {
               output +=
-                '<ul>' +
-                '<li>ID: ' +
+                "<ul>" +
+                "<li>ID: " +
                 users[i].id +
-                '</li>' +
-                '<li>NAME: ' +
+                "</li>" +
+                "<li>NAME: " +
                 users[i].name +
-                '</li>' +
-                '<li>EMAIL: ' +
+                "</li>" +
+                "<li>EMAIL: " +
                 users[i].email +
-                '</li>' +
-                '</ul>';
+                "</li>" +
+                "</ul>";
             }
 
-            document.getElementById('users').innerHTML = output;
+            document.getElementById("users").innerHTML = output;
           }
         };
 
