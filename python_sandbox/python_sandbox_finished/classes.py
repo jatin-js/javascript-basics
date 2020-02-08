@@ -40,3 +40,4 @@ print(janet.greeting())
 
 brad.has_birthday()
 print(brad.greeting())
+print('hello')
