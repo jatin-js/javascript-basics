@@ -8,8 +8,9 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background: lightskyblue
-    url("https://i.pinimg.com/originals/3c/24/46/3c24462450c2a902bf7e18f3d9aada81.jpg");
+  background: lightskyblue url("background.jpg");
+  background-position: center;
+  background-size: cover;
   color: #fff;
   /* Push to bottom */
   display: flex;
@@ -37,7 +38,7 @@ header h1 {
 }
 
 .counters {
-  background: #0f479a;
+  background: #809398;
   color: #fff;
   padding: 40px 20px;
   border-top: 3px lightskyblue solid;
@@ -51,7 +52,7 @@ header h1 {
 }
 
 .counters i {
-  color: lightskyblue;
+  color: black;
   margin-bottom: 5px;
 }
 
@@ -70,4 +71,15 @@ header h1 {
     border-bottom: 1px lightskyblue solid;
     padding-bottom: 20px;
   }
+}
+h3:nth-of-type(2),
+h3:nth-of-type(3) {
+  color: aqua;
+}
+h3:nth-of-type(2):hover,
+h3:nth-of-type(3):hover {
+  color: green;
+  /* border: black 0.1rem solid; */
+  /* animation: ease-in-out; */
+  transition: 0.5s linear;
 }
