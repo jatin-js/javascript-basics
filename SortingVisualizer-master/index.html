@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<style>
+
+</style>
+<body>
+    <div class="container-fluid">
+        <h1>Sorting Visualizer</h1>
+        <div>
+            <div>
+                <select id="sortingFunction" onchange="initialize();">
+                    <option value="bubble">Bubble Sort</option>
+                    <option value="optiBubble">Optimized Bubble Sort</option>
+                    <option value="selection">Selection Sort</option>
+                    <option value="insertion">Insertion Sort</option>
+                    <option value="quick">Quick Sort</option>
+                    <option value="merge">Merge Sort</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <select id="arrayInit" onchange="initialize();">
+                    <option value="random">Random</option>
+                    <option value="revSorted">Reverse-sorted</option>
+                    <option value="sorted">Sorted</option>
+                    <option value="incDec">Increasing Decreasing</option>
+                    <option value="decInc">Decreasing Increasing</option>
+                </select>
+            </div>
+
+            <br>
+            <label for="arraySizeRange">Array Size</label>
+            <input type="range" class="custom-range" min="0" max="100" value="50" id="arraySizeRange"
+                oninput="initialize();">
+
+            <label for="speedRange">Speed</label>
+            <input type="range" class="custom-range" min="0" max="100" value="50" step="2" id="speedRange"
+                oninput="getFps();">
+
+            <br>
+            <div>
+                <span id="startSorting" type="button" class="btn btn-primary" onclick="startButton();">Start</span>
+                <span id="pauseSorting" type="button" class="btn btn-primary" onclick="pauseButton();">Pause</span>
+                <span id="resetSorting" type="button" class="btn btn-primary" onclick="resetButton();">Reset</span>
+            </div>
+
+        </div>
+        <canvas id="main-canvas"></canvas>
+
+    
+        <script src="src/js/algorithms/bubbleSort.js"></script>
+        <script src="src/js/algorithms/optimizedBubbleSort.js"></script>
+        <script src="src/js/algorithms/selectionSort.js"></script>
+        <script src="src/js/algorithms/insertionSort.js"></script>
+        <script src="src/js/algorithms/quickSort.js"></script>
+        <script src="src/js/algorithms/mergeSort.js"></script>
+      
+        
+
+       
+        <script src="src/js/utils.js"></script>
+        <!-- <script src="src/js/sketch.js"></script> -->
+    </div>
+</body>
+
+</html>
